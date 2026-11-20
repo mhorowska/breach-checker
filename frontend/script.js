@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/check";
+const API_URL = "/api/check";
 
 async function sha1(text) {
     const bytes = new TextEncoder().encode(text);
