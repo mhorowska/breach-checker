@@ -5,3 +5,8 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./backend:/app
+  frontend:
+    volumes:
+      - ./frontend/index.html:/usr/share/nginx/html/index.html:ro
+      - ./frontend/style.css:/usr/share/nginx/html/style.css:ro
+      - ./frontend/script.js:/usr/share/nginx/html/script.js:ro
